@@ -1,0 +1,468 @@
+/* Changing the forcefully svgs of the copied buttons */
+.reply-ai-button::before {
+  content: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20height%3D%2220px%22%20viewBox%3D%220%20-960%20960%20960%22%20width%3D%2220px%22%20fill%3D%22%230000F5%22%3E%3Cpath%20d%3D%22M192-144v-153l498-498q11-11%2024-16t27-5q14%200%2027%205t24%2016l51%2051q11%2011%2016%2024t5%2027q0%2014-5%2027t-16%2024L345-144H192Zm72-72h51l380-380-25-26-26-25-380%20380v51Zm539-491-51-51%2051%2051Zm-133%2085-26-25%2051%2051-25-26ZM564-144q61%200%20120.5-35.5T744-276q0-34-15.5-56.5T679-376l-54%2053q25%2013%2036%2022.5t11%2024.5q0%2023-35.5%2041.5T564-216q-14%200-25%2011t-11%2025q0%2015%2011%2025.5t25%2010.5ZM216-423l56-56q-21-5-38.5-16T216-516q0-10%2017.5-22.5T301-576q79-40%20105-68.5t26-63.5q0-51-37.5-79.5T298-816q-41%200-78%2013.5T166-767q-9%2012-8%2026.5t13%2023.5q11%209%2026.5%207.5T222-721q13-13%2033-18t43-5q31%200%2046.5%2010.5T360-708q0%2013-16.5%2026.5T269-640q-70%2034-97.5%2061T144-516q0%2029%2017.5%2053t54.5%2040Z%22/%3E%3C/svg%3E") !important;
+  background-image: none !important;
+  display: inline-block !important; /* Ensures it doesn’t take up any space */
+}
+
+.summarize-ai-button-big::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='19' viewBox='0 0 19 19' fill='none'%3E%3Cpath d='M14.2969 2.37413V11.4218M18.0312 7.68749L11.4219 14.2968M16.8758 14.2968H7.82812M11.5625 18.0312L5.09372 11.5625M4.95312 16.8125V7.82809M1.21876 11.5625L7.68751 5.0937M2.37415 4.95309H11.0625M7.68751 1.21874L14.2969 7.82809M18.25 9.625C18.25 4.86328 14.3867 1 9.625 1C4.86328 1 1 4.86328 1 9.625C1 14.3867 4.86328 18.25 9.625 18.25C14.3867 18.25 18.25 14.3867 18.25 9.625Z' stroke='%230000FF' stroke-linecap='round'/%3E%3C/svg%3E") !important;
+  background-image: none !important;
+  display: inline-block !important; /* Ensures it doesn’t take up any space */
+}
+
+/* Styling the widget */
+
+.custom-widget {
+  /* reusable between the pages */
+  position: fixed;
+  top: 50%;
+  right: 5rem;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(1, 0, 27, 0.025);
+  background-color: #f3f4ff;
+  /* other */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  border-radius: 22px;
+  width: auto;
+  height: 9rem;
+
+  padding: 0.5rem;
+}
+
+.widgetButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.widgetButton {
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.widgetButton:hover {
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #e9ebfe;
+  transition: background-color 0.1s;
+}
+
+/* STYLING THE OVERALL Dashboard*/
+
+/* Container */
+
+.dsPage {
+  position: fixed;
+  top: 50%;
+  right: 9.25rem;
+  transform: translateY(-50%);
+  z-index: 9999;
+
+  /* cleaned  */
+  width: 25.5rem;
+  height: 38rem;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(1, 0, 27, 0.5);
+  overflow: hidden;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.dsLogoBar {
+  height: 3rem;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.5px solid #cecbcb;
+}
+
+.dsLogoElements {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5rem;
+}
+
+.dsLogoPlaceholder {
+  padding: 1rem;
+}
+
+.dsLogoContainer {
+  display: flex;
+}
+
+.dsCloseButtonContainer {
+  display: flex;
+  padding: 0.5rem;
+  margin-top: 0.1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dsCloseButtonContainer:hover {
+  background-color: #f3f4f6;
+  transition: background-color 0.2s ease;
+  color: #1e1373;
+}
+
+.dsTextContentBlockFull {
+  display: flex;
+  margin-top: 1.25rem;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dsThreadConentContainer {
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden; /* No horizontal scrolling */
+
+  width: 100%;
+  height: 23.5rem;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 0.5rem;
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+
+.dsFlexChildrenCenter {
+  justify-content: center;
+}
+
+.dsThreadConentContainer::-webkit-scrollbar {
+  width: 4px !important; /* Scrollbar width */
+  height: 4px;
+}
+
+.dsThreadConentContainer::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Scrollbar color */
+  border-radius: 4px; /* Rounded edges */
+  height: 4px;
+}
+
+.dsThreadConentContainer::-webkit-scrollbar-track {
+  background-color: transparent; /* Background of scrollbar track */
+}
+
+.dsSectionHeader {
+  font-weight: 700;
+  font-size: 1.25rem;
+  user-select: none;
+}
+
+.dsContentBuble {
+  display: flex;
+  flex-direction: column;
+  margin: 0.25rem 1.25rem;
+  padding: 1rem;
+  gap: 0.5rem;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  width: 21rem;
+}
+
+.dsOptionsBuble {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.25rem 1.25rem;
+  padding: 1rem;
+  gap: 0.5rem;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  width: 21rem;
+}
+
+p.dsParagraph {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-size: medium;
+  font-family: inherit;
+}
+
+.dsOptionsLabel {
+  color: #1e1373;
+}
+
+.dsOptionLabelText {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+}
+
+.dsOptionButton {
+  border-radius: 0.5rem;
+  width: 5rem;
+  border: 0;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  font-weight: 400;
+  padding: 0.5rem;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.dsButtonDanger {
+  background-color: #f3f4f6;
+  color: #ec221f;
+  border: solid #ec221f 1.25px;
+}
+
+.dsButtonDanger:hover {
+  background-color: #f92421;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.dsButtonAccent {
+  background-color: #1e1373;
+  border: solid #1e1373 1.25px;
+  color: #f3f4f6;
+}
+
+.dsButtonAccent:hover {
+  background-color: #311fb3;
+  border: solid #311fb3 1.25px;
+  transition: color 0.2s ease;
+}
+
+.dsButtonAccentEmpty {
+  color: #1e1373;
+  background-color: #f3f4f6;
+  border: solid #1e1373 1.25px;
+}
+
+.dsButtonAccentEmpty:hover {
+  background-color: #1e1373;
+  color: #f3f4f6;
+  transition: color 0.2s ease;
+}
+
+.dsButtonBlack {
+  background-color: black;
+  color: white;
+}
+
+.dsButtonBlack:hover {
+  background-color: #1e1373;
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.dsBubleTextContent {
+  font-size: 0.9rem;
+  color: #0a0a0a;
+}
+
+.dsBubleLabel {
+  font-size: 0.75rem;
+  display: flex;
+  gap: 0.25rem;
+  color: #6b6b6b;
+  font-weight: 500;
+}
+
+.dsNoteRemoveButton {
+  color: #6b6b6b;
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.dsNoteRemoveButton:hover {
+  color: red;
+  transition: color 0.2s ease;
+}
+
+.dsSummaryRemoveButton {
+  color: #6b6b6b;
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.dsSummaryRemoveButton:hover {
+  color: red;
+  transition: color 0.2s ease;
+}
+
+.dsInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dsContentContainer {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dsInputButton {
+  border-radius: 0rem;
+  border: 0;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.dsButtonMain {
+  background-color: #1e1373;
+  color: #f3f4f6;
+}
+
+.dsButtonMain:hover {
+  background-color: #1e1999;
+  transition: background-color ease 0.2s;
+}
+
+.dsButtonMain:active {
+  background-color: #1e1373;
+  transition: background-color ease 0.2s;
+}
+
+.dsInputField {
+  padding: 1rem 1rem;
+  border: 0;
+  border-top: solid #1e1373;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+
+.dsHidden {
+  display: none !important;
+}
+
+/* Updated Login Selectors */
+
+.dsLoginScreenContentBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.dsLoginScreenThreadContent {
+  height: auto !important;
+  margin-top: 0.5rem !important;
+}
+
+.dsLoginScreenThreadContent > p {
+  font-size: 1rem;
+  padding: 0rem 3rem;
+  text-align: center;
+  color: #787878;
+  line-height: 150%;
+}
+
+.dsLoginSmallLabel {
+  font-size: 0.8rem !important;
+}
+
+.dsLoginScreenThreadContent > button {
+  border-radius: 0.25rem;
+  padding: 0.75rem 4rem;
+  border: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #1e1373;
+  color: white;
+  transition: background-color ease 0.2s;
+  cursor: pointer;
+}
+
+.dsLoginScreenThreadContent > button:hover {
+  background-color: #1e1999;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ALERT NOTIFICATION */
+
+.ds-alert {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  width: 30rem;
+  transform: translateX(-40%);
+  font-family: sans-serif;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-radius: 0.5rem;
+  z-index: 1000;
+}
+
+.ds-alert-error {
+  background-color: red;
+  color: black;
+}
+
+.ds-alert-success {
+  background-color: #1e1373;
+  color: white;
+}
+
+.ds-alert-heading {
+  padding-top: 0;
+  margin: 0;
+}
+
+.ds-alert-text {
+  margin: 0;
+}
+
+.ds-alert-fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.ds-alert-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ds-alert-hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
