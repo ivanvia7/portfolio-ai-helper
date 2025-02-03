@@ -74,27 +74,18 @@ npm run build
 
 ### 🔹 Summary Feature
 
-![Summary Feature](static/screenshots/summary-screen.png)
+![Summary Feature](static/screenshots/summary-screen-new.png)
 
 ### 🔹 Login View
 
-![Login Screen](static/screenshots/login-screen.png)
+![Login Screen](static/screenshots/login-screen-new.png)
 
 ### 🔹 Notes View
 
-![Login Screen](static/screenshots/notes-screen.png)
-
-## 🚀 Deployment
-
-To deploy with **Vercel**:
-
-```
-npm run build
-vercel deploy
-```
+![Login Screen](static/screenshots/notes-screen-new.png)
 
 ## 🤝 Connect with Me
 
-- **LinkedIn:** [linkedin.com/in/yourname](https://linkedin.com/in/yourname)
-- **GitHub:** [github.com/yourusername](https://github.com/yourusername)
-- **Email:** [youremail@example.com](mailto:youremail@example.com)
+- **LinkedIn:** [linkedin.com/in/ivan-via/](https://www.linkedin.com/in/ivan-via/)
+- **GitHub:** [github.com/ivanvia7](https://github.com/ivanvia7)
+- **Email:** [ivanvia.work@gmail.com](mailto:ivanvia.work@gmail.com)
