@@ -6,7 +6,7 @@ This Chrome extension enhances Gmail by providing **AI-powered thread summaries*
 
 ## 🔗 Live Demo
 
-[🌐 Install Extension](https://your-extension-link.com/)
+Currently deployment is in progress.
 
 ## ⚡ Tech Stack
 
@@ -70,15 +70,19 @@ npm run build
 3. Click **Load Unpacked** and select the `src` directory.
 4. Pin the extension for easy access!
 
-## 🎨 Customization
-
-- Modify AI behavior in `/src/content/aiFunctionalityUtils.js`
-- Adjust UI elements in `/src/widget/popup.js`
-- Update API endpoints in `/src/background/api/`
-
 ## 📸 Screenshots
 
-_Add some screenshots or GIFs demonstrating the extension in action._
+### 🔹 Summary Feature
+
+![Summary Feature](static/screenshots/summary-screen.png)
+
+### 🔹 Login View
+
+![Login Screen](static/screenshots/login-screen.png)
+
+### 🔹 Notes View
+
+![Login Screen](static/screenshots/notes-screen.png)
 
 ## 🚀 Deployment
 
