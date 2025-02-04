@@ -1,12 +1,12 @@
-# 🚀 Chrome Extension: Gmail Thread Summarizer
+# 🚀 Chrome Extension: AI Helper for Gmail
 
 ## 📝 About
 
-This Chrome extension enhances Gmail by providing **AI-powered thread summaries**, making it easier for users to quickly grasp the key points of long email conversations. Built with **JavaScript, React, Express, MongoDB, and OAuth 2.0**, it integrates seamlessly into Gmail for an optimized workflow.
+This Chrome extension enhances Gmail by providing **AI-powered thread summaries** and **custom notes system**, making it easier for users to quickly grasp the key points of long email conversations. Built with **JavaScript, React, Express, MongoDB, and OAuth 2.0**, it integrates seamlessly into Gmail for an optimized workflow.
 
 ## 🔗 Live Demo
 
-Currently deployment is in progress.
+The deployment to Google Store is in progress.
 
 ## ⚡ Tech Stack
 
@@ -53,13 +53,6 @@ Currently deployment is in progress.
  ├── webpack.config.js   # Webpack configuration
  └── .gitignore          # Ignored files
 ```
-
-### Load the Extension in Chrome:
-
-1. Open **chrome://extensions/** in your browser.
-2. Enable **Developer Mode** (toggle in the top-right corner).
-3. Click **Load Unpacked** and select the `src` directory.
-4. Pin the extension for easy access!
 
 ## 📸 Screenshots
 
