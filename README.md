@@ -54,15 +54,6 @@ Currently deployment is in progress.
  └── .gitignore          # Ignored files
 ```
 
-## 🛠️ Setup & Installation
-
-```
-git clone https://github.com/yourusername/gmail-thread-summarizer.git
-cd gmail-thread-summarizer
-npm install
-npm run build
-```
-
 ### Load the Extension in Chrome:
 
 1. Open **chrome://extensions/** in your browser.
